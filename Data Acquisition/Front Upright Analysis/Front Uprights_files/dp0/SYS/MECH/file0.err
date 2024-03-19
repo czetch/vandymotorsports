@@ -1,0 +1,15 @@
+/COM,ANSYS RELEASE 2023 R1           BUILD 23.1      UP20221128       18:36:18
+
+ *** ERROR ***                           CP =       0.312   TIME= 18:36:18
+ An unexpected error ( SIG$ILL ) has occurred...  MAPDL internal data    
+ has been corrupted.  MAPDL is unable to recover and will terminate.     
+ Previously saved files are unaffected.  Please send the data leading    
+ to this operation to your technical support provider, as this will      
+ allow ANSYS, Inc to improve the program.                                
+
+ *** ERROR ***                           CP =       0.375   TIME= 18:36:18
+ An unexpected error ( SIG$SEGV ) has occurred...  MAPDL internal data   
+ has been corrupted.  MAPDL is unable to recover and will terminate.     
+ Previously saved files are unaffected.  Please send the data leading    
+ to this operation to your technical support provider, as this will      
+ allow ANSYS, Inc to improve the program.                                
