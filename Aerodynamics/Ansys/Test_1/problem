@@ -1,0 +1,1391 @@
+set job_printcmd_ps {lp -d%p %f}
+set job_ctrlkey Control
+set job_helpviewer {}
+set job_printcmd_text {lp -d%p %f}
+set job_autoraise 0
+set job_listsort creation_order
+set job_scratch jobdir
+set job_autoraise 0
+set job_xterm_opts {}
+set job_home_direction -z
+set job_precision 0
+set job_diff_flag 0
+set job_legend_sigfigs 0
+set job_legend_figstype g
+set job_legend_time_sigfigs 4
+set job_legend_time_figstype f
+set job_all_fixvals per
+set job_ptol 1e-6
+set problem_radthreshhold 0.05
+set problem_time steady
+set problem_nsteps 20
+set problem_flowvar 1
+set problem_opressure 101325
+set problem_odensity 1.225
+set problem_ideal_gas 0
+set problem_turbulent 0
+set problem_charvel 0
+set problem_charlen 0
+set problem_turbintens 0
+set problem_turbmodel two
+set problem_turb_prandtl 0.9
+set problem_gravity 0
+set problem_gravx 0
+set problem_gravy -9.80665
+set problem_gravz 0
+set problem_ts 0
+set problem_te 1
+set problem_temp 20
+set problem_pressure 0
+set problem_init_per_object 0
+set problem_init_x 0
+set problem_init_y 0
+set problem_init_z 0
+set problem_init_t ambient
+set problem_init_id {}
+set problem_oaltitude 0
+set problem_alt_on 0
+set problem_alt_fan 0
+set problem_saveinter 10
+set problem_saveintervary 0
+set problem_saveinter_pvals {}
+set problem_stepincr 0.001
+set problem_integrator first
+set problem_increments fixed
+set problem_varstep 0.001
+set problem_tempvar 1
+set problem_init_tke 1
+set problem_init_tdr 1
+set problem_init_sdr 1
+set problem_tsvary 0
+set problem_tsvary_type linear
+set problem_tsvary_lini 0.001
+set problem_tsvary_lina 1.0
+set problem_tsvary_pvals {}
+set problem_tsvary_lini_units s
+set problem_radtemp 20
+set problem_temp_trans 0
+array set problem_ambient {
+    temp_trans_square_on 0.0
+    temp_trans_curve {}
+    temp_trans_sin_t 0.0
+    temp_trans_square_phase 0.0
+    temp_fixed 0.0
+    temp_transient 0
+    temp_trans_type linear
+    temp_trans_square_off 0.0
+    temp_trans_sin_t0 0.0
+    temp_total 0.0
+    temp_trans_power_a 0.0
+    temp_trans_exp_a 0.0
+    temp_trans_square_offval 0.0
+    temp_trans_exp_b 0.0
+    temp_trans_power_b 0.0
+    temp_lincoeff 0.0
+    temp_volume 0.0
+    temp_linvalue 0.0
+    temp_trans_sin_a 0.0
+    temp_type volume
+    temp_trans_linear_a 0.0
+}
+array set problem_ambient_units {
+    temp_trans_square_on s
+    temp_trans_square_phase s
+    temp_trans_sin_t0 s
+    temp_trans_square_off s
+}
+set problem_temp_units C
+set problem_pressure_units N/m2
+set problem_opressure_units N/m2
+set problem_odensity_units kg/m3
+set problem_use_odensity 0
+set problem_op_refx 0
+set problem_op_refy 0
+set problem_op_refz 0
+set problem_op_refx_units m
+set problem_op_refy_units m
+set problem_op_refz_units m
+set problem_radtemp_units C
+set problem_init_t_units C
+set problem_oaltitude_units m
+set problem_init_tke_units m2/s2
+set problem_init_tdr_units m2/s3
+set problem_init_sdr_units 1/s
+set problem_init_x_units m/s
+set problem_init_y_units m/s
+set problem_init_z_units m/s
+set problem_ts_units s
+set problem_te_units s
+set problem_gravx_units m/s2
+set problem_gravy_units m/s2
+set problem_gravz_units m/s2
+set problem_stepincr_units s
+set problem_comfort 1
+set problem_disco 0
+array set problem_trans_tsq_vals {
+    min_duration 0.0
+    maxval 0.0
+    phase_delay 0.0
+    max_duration 0.0
+    minval 0.0
+}
+array set problem_trans_tsq_vals_units {
+    min_duration s
+    maxval s
+    phase_delay s
+    max_duration s
+    minval s
+}
+array set problem_trans_auto_vals {
+    mint 0.001
+    initt 0.001
+    nft 5
+    intv 1
+    maxs 5
+    maxt 2
+    tre 0.01
+    mins 0.5
+}
+array set problem_trans_auto_vals_units {
+    mint s
+    initt s
+    maxt s
+}
+set problem_power_profile_fname {}
+set problem_savesteady 100
+set problem_default_temp_limit 20
+set problem_default_temp_limit_units C
+set problem_disco 0
+set problem_nthwardx 1.0
+set problem_nthwardy 0.0
+set problem_nthwardz 0.0
+set grid_type {}
+set grid_convert_multi 0
+set grid_max_elements 25000000
+set grid_perobject 0
+set grid_usesize_x 0
+set grid_usesize_y 0
+set grid_usesize_z 0
+set grid_usesize_h 0
+set grid_size_x 1
+set grid_size_y 1
+set grid_size_z 1
+set grid_size_h 0
+set grid_gcount_i 10
+set grid_gcount_j 10
+set grid_gcount_k 10
+set grid_hgrid 0
+set grid_gtype unif
+set grid_gmax_i 0
+set grid_gmax_j 0
+set grid_gmax_k 0
+set grid_gmin_i 0
+set grid_gmin_j 0
+set grid_gmin_k 0
+set grid_set_default_sizes 0
+array set grid_gratio {
+    j_dir 0
+    j_rat 1
+    i_init 0
+    k_dir 0
+    k_rat 1
+    j_init 0
+    k_init 0
+    i_dir 0
+    i_rat 1
+}
+set grid_hdm_uniform 0
+set grid_hdm_aniso_uniform 0
+set grid_hdm_mlm 0
+set grid_hdm_mlm_auto auto
+set grid_hdm_mlm_auto_levels 2
+set grid_hdm_mlm_auto_prox 1
+set grid_hdm_ssm 0
+set grid_hdm_icechip 1
+set grid_hdm_per_object_size_func 0
+set grid_enable_prism_layer 0
+set grid_hdm_use_transition_template 0
+set grid_hdm_force_smooth_niter 5
+set grid_cart2d_blocking 0
+set grid_hdm_if_proj 0
+set grid_hdm_fixed_boundary_proj 1
+set grid_hdm_mlm_auto_curv 1
+set grid_hdm_mlm_buff 0
+set grid_hdm_mlm_cartd 0
+set grid_hdm_mlm_2d 0
+set grid_hdm_mlm_2d_type 2
+set grid_minglobal 0
+set grid_global_maxrat 0
+set grid_tetra_sm 1
+set grid_tetra_smqual 0.4
+set grid_tetra_smiters 10
+set grid_tetra_smcoarse 1
+set grid_tetra_smcasp 0.1
+set grid_tetra_auto_inter 1
+set grid_highlight_block_sides 1
+set grid_tetra_smciters 1
+set grid_tetra_prisms 0
+set grid_tetra_prism_num 4
+set grid_tetra_prism_height 0.0
+set grid_tetra_prism_yplus 0.001
+set grid_run_tetssi 1
+array set grid_prism_families {
+    ORFN 0
+}
+set grid_triangulation_tolerance 0.00005
+array set grid_tetra_params {
+    tetra_size_on_surfs 0
+    n_cells_in_gap 2
+    natural_size_refinement 32
+    tetra_size_on_curves 0
+    split_spanning 1
+    tetra_ratio 0
+    edge_criterion 0.05
+    natural_size_factor 0.8
+}
+set grid_cutter_tries 20
+set grid_allow_addfaces 1
+set grid_no_tetra 0
+set grid_no_cutter 0
+set grid_cutter_surface 0
+set grid_subgrids 0
+set grid_ratios 0
+set grid_mesh_parts_separate 1
+set grid_settings_type normal
+set grid_tetra_settings_type normal
+set grid_sep_x 1e-3
+set grid_sep_y 1e-3
+set grid_sep_z 1e-3
+set grid_sep_x_units m
+set grid_sep_y_units m
+set grid_sep_z_units m
+set grid_include_all_gaps 0
+set grid_accept_all_minval_changes 1
+set grid_cutouts 1
+set grid_partial_cutouts 0
+set solve_startmon 1
+set solve_when now
+set solve_time {}
+set solve_where here
+set solve_lsf 0
+set solve_remote {}
+set solve_id {}
+set solve_jobtype new
+set solve_jobinterp {}
+set solve_method segiter
+set solve_segiter_num 100
+set solve_segdirect_num 100
+set solve_coupled_num 50
+set solve_segiter_tol 0.01
+set solve_segdirect_tol 0.01
+set solve_coupled_tol 0.01
+set solve_coupled_rtol 0.01
+set solve_iter_sym_method CR
+set solve_iter_nonsym_method CGS
+set solve_iter_sym_num 1e-5
+set solve_iter_nonsym_num 1e-6
+set solve_sym_cond gauss-seidel
+set solve_nonsym_cond gauss-seidel
+set solve_restart_data interdata
+set solve_restid {}
+set solve_upwind_relax_type firstcut
+set solve_upwind_type first
+set solve_relax_type hybrid
+set solve_relax_velocity_min 0.5
+set solve_relax_pressure_min 0.75
+set solve_relax_temperature_min 0.5
+set solve_relax_turbulent_ke_min 0.5
+set solve_relax_turbulent_diss_min 0.5
+set solve_relax_velocity_max 0.0
+set solve_relax_pressure_max 0.0
+set solve_relax_temperature_max 0.0
+set solve_relax_turbulent_ke_max 0.0
+set solve_relax_turbulent_diss_max 0.0
+set solve_upwind_velocity 0.1
+set solve_upwind_temperature 0.1
+set solve_upwind_turbulent_ke 0.1
+set solve_upwind_turbulent_diss 0.1
+set solve_extrapolation 1
+set solve_outflow_treatment 0
+set solve_pre_mem 0
+set solve_solve_mem 0
+set solve_mem_elems 0
+set solve_mem_nodes 0
+set solve_ruser {}
+set solve_rdir {}
+set solve_root {}
+set solve_fluent_inc {}
+set solve_segmethod PPROJECTION
+set solve_pupdate 0.15
+set solve_temp_min ambient
+set solve_temp_max 0
+set solve_setup_once 0
+set solve_damp_on 0
+set solve_damp_flow 0
+set solve_damp_temp 1
+set solve_mag_change_check 2
+set solve_solver uns
+set solve_disable_rad 0
+set solve_disable_jou 0
+set solve_hybrid_init 0
+set solve_fl_turb_off 0
+set solve_export 0
+set solve_export_type Nastran
+set solve_export_file {}
+set solve_do_trials 0
+set solve_old_naming 0
+set solve_parallel 0
+set solve_parallel_num 2
+set solve_parallel_file {}
+set solve_use_metis 0
+set solve_partition_method Metis
+set solve_gpu 0
+set solve_gpu_num 1
+set solve_allow_zone_merge 1
+set solve_merge_nci 1
+set solve_parallel_platform {}
+set solve_parallel_interconnect default
+set solve_parallel_mpi default
+set solve_parallel_remote_shell default
+set solve_parallel_host_ip default
+set solve_sec_grad 0
+set solve_temp_grad 0
+set solve_pv_coupling 0
+set solve_pseudo_trans 0
+set solve_hot_relax 0
+set solve_hot_urf 0.25
+set solve_interp_udf 0
+set solve_concurrent_num 1
+set solve_precis 2
+set solve_no_gui 1
+set solve_parallel_spath {}
+set solve_parallel_udfshare 0
+set solve_share_drive X:
+set solve_write_cfd_post_files 0
+set solve_write_conductivity 0
+set solve_parallel_hn {}
+set solve_parallel_num_mjs 2
+set solve_parallel_spath_mjs {}
+set solve_parallel_udfshare_mjs 0
+set solve_parallel_freq 10
+set solve_mon_freq 1
+set solve_auto_par 0
+set solve_dat_file 1
+set solve_fdat_file 1
+set solve_rem_lnx 0
+set solve_rem_mach {}
+set solve_rem_login {}
+set solve_rem_solve_path {}
+set solve_rem_icepak_path {}
+set solve_rem_work_dir {}
+set solve_rem_head_node {}
+set solve_rem_login {}
+set solve_curr_vec 0
+set solve_rem_spn_com ssh
+set solve_rem_copy_com {}
+set solve_use_poor_mesh_numerics 1
+set solve_variable_continuity_scaling 0
+set solve_use_udfs 0
+set solve_udf_file {}
+set solve_udf_hooks {}
+set solve_parallel_lnxjs 0
+set solve_parallel_lnxjs_tight_coupling 0
+set solve_parallel_lnxjs_num 2
+set solve_parallel_lnxjs_lsf_host {}
+set solve_parallel_lnxjs_lsfqpath {}
+set solve_parallel_lnxjs_lsfoptions {}
+set solve_parallel_lnxjs_sgeqmaster {}
+set solve_parallel_lnxjs_sgequeue {}
+set solve_parallel_lnxjs_sgepe {}
+set solve_parallel_lnxjs_pbs_host {}
+set solve_parallel_lnxjs_slurm_host {}
+set solve_parallel_lnxjs_slurm_opts {}
+set solve_parallel_lnxjs_slurm_queue {}
+set solve_sequential 0
+set solve_no_run 0
+set solve_do_fast_trials 1
+set uns_numiter 100
+set uns_numtransiter 20
+set uns_crit 0.001
+set uns_crit_energy 1e-7
+set uns_crit_k 0.001
+set uns_crit_epsilon 0.001
+set uns_crit_omega 0.001
+set uns_crit_disco 1e-6
+set uns_crit_joule 1e-7
+set uns_crit_species 0.001
+array set uns_disc_order {
+    species_default 1
+    turb_d 1
+    pressure 1
+    disco 1
+    energy 1
+    temperature_secondary_grad 0
+    temperature 1
+    momentum 1
+    turb_w 1
+    turb_k 1
+}
+array set uns_under_rel {
+    species_default 1.0
+    turb_d 0.8
+    bodyforce 1.0
+    viscosity 1.0
+    pressure 0.3
+    energy 1.0
+    temperature 1.0
+    momentum 0.7
+    joule 1.0
+    turb_w 0.8
+    turb_k 0.8
+}
+array set uns_solver_type {
+    species_default flex
+    turb_d flex
+    bodyforce flex
+    pressure V
+    energy F
+    temperature F
+    momentum flex
+    joule F
+    turb_w flex
+    turb_k flex
+}
+array set uns_term_crit {
+    species_default 0.1
+    turb_d 0.1
+    bodyforce 0.1
+    pressure 0.1
+    energy 0.1
+    temperature 0.1
+    momentum 0.1
+    joule 0.1
+    turb_w 0.1
+    turb_k 0.1
+}
+array set uns_resid_tol {
+    species_default 0.7
+    turb_d 0.7
+    bodyforce 0.7
+    pressure 0.7
+    energy 0.7
+    temperature 0.7
+    momentum 0.7
+    joule 0.7
+    turb_w 0.7
+    turb_k 0.7
+}
+array set uns_stab {
+    pressure None
+    temperature None
+    joule None
+}
+set uns_pre_sweeps 0
+set uns_post_sweeps 1
+set uns_group_size 2
+set uns_max_cycle 30
+array set graph_color {
+    opening #fff49b
+    {mesh quad} yellow
+    resistance #c5ebb8
+    {cad point} #e6e6fa
+    block #a8a8b5
+    package #ffd1a1
+    names white
+    plate #d19d6d
+    {mesh selected} orange
+    ventres #aaaaaa
+    heatsink #69b46e
+    part gray
+    enclosure #b8d1eb
+    wall #b0b182
+    domain blue
+    surface_probe #000000
+    {cad line} gray
+    highlight red
+    source #ce0000
+    network purple
+    title white
+    {mesh bar} white
+    blower #dedeeb
+    {mesh hexa} #e6e6fa
+    pcb #8fb582
+    vent #aaaaaa
+    fan #829bb5
+    {mesh penta} #fae6e6
+    heat_exchanger #d1f7ea
+    {mesh quality} red
+    part_sep #ff50c0
+    date white
+    periodic #e4e5b6
+    {mesh adjacent} orange
+}
+array set graph_width {
+    opening 1
+    {mesh quad} 1
+    resistance 1
+    {cad point} 4
+    block 1
+    package 1
+    names {}
+    plate 1
+    {mesh selected} 1
+    ventres 1
+    heatsink 1
+    part 1
+    enclosure 1
+    wall 1
+    domain 1
+    {cad line} 2
+    highlight 1
+    source 1
+    network 1
+    title {}
+    {mesh bar} 4
+    blower 1
+    {mesh hexa} 1
+    pcb 1
+    vent 1
+    fan 1
+    {mesh penta} 1
+    heat_exchanger 1
+    {mesh quality} 1
+    part_sep 1
+    date {}
+    periodic 1
+    {mesh adjacent} 1
+}
+array set graph_shadepolicy {
+    opening view
+    {mesh quad} {}
+    resistance view
+    {cad point} {}
+    block view
+    package view
+    names {}
+    plate view
+    {mesh selected} {}
+    ventres view
+    heatsink view
+    part view
+    enclosure view
+    wall view
+    domain {}
+    {cad line} {}
+    highlight {}
+    source view
+    network view
+    title {}
+    {mesh bar} {}
+    blower view
+    {mesh hexa} {}
+    pcb view
+    vent view
+    fan view
+    {mesh penta} {}
+    heat_exchanger view
+    {mesh quality} {}
+    part_sep view
+    date {}
+    periodic view
+    {mesh adjacent} {}
+}
+array set graph_fancy {
+    opening 1
+    {mesh quad} {}
+    resistance 1
+    {cad point} {}
+    block {}
+    package 1
+    names {}
+    plate {}
+    {mesh selected} {}
+    ventres 1
+    heatsink 1
+    part {}
+    enclosure {}
+    wall {}
+    domain {}
+    {cad line} {}
+    highlight {}
+    source 1
+    network 1
+    title {}
+    {mesh bar} {}
+    blower 1
+    {mesh hexa} {}
+    pcb 1
+    vent 1
+    fan 1
+    {mesh penta} {}
+    heat_exchanger 1
+    {mesh quality} {}
+    part_sep {}
+    date {}
+    periodic {}
+    {mesh adjacent} {}
+}
+array set graph_font {
+    opening fixed
+    {mesh quad} {}
+    resistance fixed
+    {cad point} {}
+    block fixed
+    package fixed
+    names fixed
+    plate fixed
+    {mesh selected} {}
+    ventres fixed
+    heatsink fixed
+    part fixed
+    enclosure fixed
+    wall fixed
+    domain fixed
+    {cad line} {}
+    highlight {}
+    source fixed
+    network fixed
+    title fixed
+    {mesh bar} {}
+    blower fixed
+    {mesh hexa} {}
+    pcb fixed
+    vent fixed
+    fan fixed
+    {mesh penta} {}
+    heat_exchanger fixed
+    {mesh quality} {}
+    part_sep fixed
+    date fixed
+    periodic fixed
+    {mesh adjacent} {}
+}
+array set graph_texture {
+    {mesh quad} {}
+    {cad point} {}
+    names {}
+    {mesh selected} {}
+    part {}
+    {cad line} {}
+    highlight {}
+    title {}
+    {mesh bar} {}
+    {mesh hexa} {}
+    {mesh penta} {}
+    {mesh quality} {}
+    part_sep {}
+    date {}
+    {mesh adjacent} {}
+}
+array set graph_transparency {
+    {mesh quad} 0.5
+    {cad point} 0.5
+    names 0.5
+    {mesh selected} 0.5
+    part 0.5
+    {cad line} 0.5
+    highlight 0.5
+    title 0.5
+    {mesh bar} 0.5
+    {mesh hexa} 0.5
+    {mesh penta} 0.5
+    {mesh quality} 0.5
+    part_sep 0.5
+    date 0.5
+    {mesh adjacent} 0.5
+}
+array set graph_transparency_on {
+    {mesh quad} 0
+    {cad point} 0
+    names 0
+    {mesh selected} 0
+    part 0
+    {cad line} 0
+    highlight 0
+    title 0
+    {mesh bar} 0
+    {mesh hexa} 0
+    {mesh penta} 0
+    {mesh quality} 0
+    part_sep 0
+    date 0
+    {mesh adjacent} 0
+}
+set default_pipe_radius 0.1
+set shape_x_grid_on 0
+set shape_y_grid_on 0
+set shape_z_grid_on 0
+set shape_x_grid 1.0
+set shape_y_grid 1.0
+set shape_z_grid 1.0
+set shape_color_gray 1
+set merge_zone_cfd_post 1
+set update_name_from_dm 0
+set disp_classic_cur 0
+set mouse_right_click_menu 1
+set mouse_selected_pt_rot 1
+set display_traces_in_3D 1
+set cmap_legendmap_style 0
+set cmap_monolegclr #ffffff
+set shape_movegroup 0
+set shape_snap_objects 0
+set shape_snap_tol 10
+set new_shape_factor 0.2
+set domain_autoscale_factor 1.0
+set default_fluid_family FLUID
+set gmax_in_def_units 1
+set family_name_type full
+set family_name_nchars 6
+set family_name_sep_dims 1
+array set grid_mesher_params {
+    no_group_ogrids 0
+    conformal 1
+    plate_join_tolerance 0
+    cartesian 0
+    min_cylinder_face 4
+    cyl_shrink_factor 0.99
+    max_ratio 2
+    no_ogrids 0
+    height_max 0
+    min_elements_gap 3
+    min_triangle_face 4
+    ignore_globals 0
+    ignore_perobject 0
+    max_ogrid 0
+    min_elements_block 2
+    conformal_tol 0.01
+}
+set grid_concurrency 1
+set meshing_units m
+set meshing_frequency_value 0
+set meshing_frequency_scale GHz
+set tdv_user_views {}
+array set tdv_lights_settings {
+    light1_x 0.0
+    ambient 1
+    light2_intensity 0.6
+    light2_x 0.0
+    light1_y 0.0
+    light3_intensity 0.4
+    light1 1
+    light3_x 1.0
+    light2_y 1.0
+    light1_pos 0
+    light1_z 10.0
+    light4_intensity 0.0
+    light2 1
+    light4_x -2.0
+    light3_y -2.0
+    light2_pos 0
+    light2_z -1.0
+    light3 1
+    light4_y 1.0
+    light3_pos 0
+    light3_z -1.0
+    light4 0
+    light4_pos 0
+    light4_z -1.0
+    ambient_color #ffffff
+    light1_color #ffffff
+    complex 0
+    light2_color #ffffff
+    light3_color #ffffff
+    light4_color #ffffff
+    ambient_intensity 0.3
+    light1_intensity 0.75
+}
+array set tdv_material_settings {
+    m_d 1.0
+    m_a 0.35
+    m_sh 15
+    m_s 0.35
+}
+array set tdv_mouse_bindings {
+    select 1
+    scale 3
+    trans 2
+    wheelactive 1
+    wheel 5
+    rot 1
+    cancel 3
+    done 2
+    scale_dir 1
+}
+set tdv_animate_rotation 1
+set tdv_animate_outline 1
+set expression_mode all
+set expression_edit_trial_how_solveid nums
+array set unit_data {
+    kg/m2 { 0        1          0 mass/area                	0 }
+    g/cm2-s { 0        0.1        0 mass_flow/area             0 }
+    {} { 0        1          0 "" }
+    kg/m3 { 0        1          0 density            	0 }
+    m/s2 { 0        1          0 acceleration        	0 }
+    mm { 0        1000       0 "length roughness"         0 }
+    1/cm2 { 0        1e-4       0 1/area             	0 }
+    cm/s { 0        100        0 "speed velocity"           0 }
+    C { -273.15  1          0 temperature        	0 }
+    microns { 0        1e6	   0 "length roughness"         0 }
+    cal/s-m-K { 0        0.23890    0 conductivity       	0 }
+    lbm/ft-s { 0        0.671969   0 viscosity          	0 }
+    kcal/kg-C { 0        2.38852e-4 0 sp_heat            	0 }
+    N/m2 { 0        1          0 pressure           	0 }
+    mm2 { 0        1e6        0 area               	0 }
+    ft/s { 0        3.28084    0 "speed velocity"           0 }
+    cm/s2 { 0        100        0 acceleration               0 }
+    m2/g { 0        1          0 extcoeff                   0 }
+    BTU/F-h { 0        1.8961056  0 conductance          	0 }
+    mm3 { 0        1e9        0 volume               	0 }
+    kg/m-s { 0        1          0 viscosity          	0 }
+    BTU/s-ft2 { 0        8.8114e-5  0 "power/area heat_flux"     0 }
+    Rd { 0        1.8        0 temp_change        	0 }
+    F { -459.67  1.8        0 temperature        	0 }
+    BTU/s-ft3 { 0        8.8114e-5  0 "power/volume power_density"      0 }
+    erg/cm2-s { 0        1000       0 "power/area heat_flux"     0 }
+    Kd { 0        1          0 temp_change        	0 }
+    1/in { 0        0.0254     0 1/length                   0 }
+    m2 { 0        1          0 area               	0 }
+    ft2/s2 { 0        10.76391   0 turbulent_k                0 }
+    kg/s-m2 { 0        1          0 mass_flow/area     	0 }
+    m3 { 0        1          0 volume               	0 }
+    ms { 0        1000       0 time                       0 }
+    ft2/s3 { 0        10.76391   0 turbulent_o                0 }
+    in2 { 0        1550.003   0 area               	0 }
+    C-mm2/W { 0        1e6        0 impedance          	0 }
+    ft { 0        3.28084    0 "length roughness" 	0 }
+    in3 { 0        61023.7    0 volume               	0 }
+    m2/s2 { 0        1          0 turbulent_k                0 }
+    lbm { 0        2.20462    0 mass                	0 }
+    J/kg-C { 0        1          0 "sp_heat heat_capacity"  	0 }
+    K { 0        1          0 temperature        	0 }
+    Amp/m2 { 0        1          0 elect_current_density      0 }
+    m2/s3 { 0        1          0 turbulent_o                0 }
+    kg/kmol { 0        1          0 mol_weight         	0 }
+    BTU/h-ft-F { 0        0.577934   0 conductivity       	0 }
+    kcal/kg-K { 0        2.38852e-4 0 sp_heat            	0 }
+    ft2 { 0        10.76391   0 area               	0 }
+    W/C-m2 { 0        1          0 heat_tr_coeff              0 }
+    microns2 { 0        1e12       0 area                       0 }
+    ft3 { 0        35.3147    0 volume               	0 }
+    mm/s2 { 0        1000       0 acceleration               0 }
+    BTU/s-ft-F { 0        1.60537e-4 0 conductivity               0 }
+    lbm/ft3 { 0        0.062426   0 density            	0 }
+    BTU/F-s { 0        5.26696e-4 0 conductance          	0 }
+    1/cm { 0        1e-2       0 1/length                   0 }
+    gr { 0        14172.34   0 mass                	0 }
+    m2/s { 0        1          0 diffusivity        	0 }
+    BTU/R-h { 0        1.8961056  0 conductance          	0 }
+    BTU/ft2-s-F { 0        4.89167e-5 0 heat_tr_coeff     	 	0 }
+    Cu-oz/ft2 { 0        29362.4    0 "length roughness" 	0 }
+    W/mm2 { 0        1.0e-6     0 "power/area heat_flux"     0 }
+    R { 0        1.8        0 temperature        	0 }
+    gr/lbm { 0        1          0 gr/lbm                     0 }
+    J/kg-K { 0        1          0 "sp_heat heat_capacity"    0 }
+    cm2/s { 0        1e4        0 diffusivity                0 }
+    lbm/s { 0        2.204623   0 mass_flow          	0 }
+    W/K-m2 { 0        1          0 heat_tr_coeff      	0 }
+    1/m { 0        1          0 1/length                   0 }
+    microsec { 0        1000000    0 time                       0 }
+    V { 0        1          0 e_voltage                  0 }
+    Amp { 0        1          0 e_current                  0 }
+    Ohm-m { 0        1          0 e_resistance               0 }
+    cfm { 0        2118.8802  0 volume_flow		0 }
+    BTU/ft2-h-F { 0        0.17614937 0 heat_tr_coeff              0 }
+    ft/s2 { 0        3.28084    0 acceleration               0 }
+    W { 0        1          0 "power heat rad_flux"  	0 }
+    m/s { 0        1          0 "speed velocity"     	0 }
+    g/kg { 0        1          0 g/kg                       0 }
+    BTU/h-ft-R { 0        0.577934   0 conductivity       	0 }
+    erg/cm3-s { 0        1000       0 "power/volume power_density"      0 }
+    erg/s { 0        1e7        0 "power heat rad_flux"      0 }
+    HP { 0        1.34102e-3 0 "power heat rad_flux"      0 }
+    deg { 0        57.2957805 0 angle              	0 }
+    Fd { 0        1.8        0 temp_change        	0 }
+    mil { 0        39370.08   0 "length roughness" 	0 }
+    cm2 { 0        1e4        0 area               	0 }
+    BTU/lb-F { 0        2.38852e-4 0 sp_heat            	0 }
+    BTU/h-ft2 { 0        0.3170878  0 "power/area heat_flux"     0 }
+    1/s { 0        1          0 1/time               	0 }
+    cm3 { 0        1e6        0 volume               	0 }
+    BTU/R-s { 0        5.26696e-4 0 conductance          	0 }
+    BTU/h-ft3 { 0        0.3170878  0 "power/volume power_density"      0 }
+    BTU/ft2-s-R { 0        4.89167e-5 0 heat_tr_coeff              0 }
+    lbm/min { 0        132.2774   0 mass_flow                  0 }
+    C-in2/W { 0        1550.003   0 impedance          	0 }
+    lb/ft-s { 0        0.671969   0 viscosity          	0 }
+    in { 0        39.37008   0 "length roughness" 	0 }
+    rad { 0        1          0 angle              	0 }
+    ft3/min { 0        2118.8802  0 volume_flow                0 }
+    m3/s { 0        1	   0 volume_flow	        0 }
+    BTU/ft2-h-R { 0        0.17614937 0 heat_tr_coeff              0 }
+    W/m-C { 0        1          0 conductivity       	0 }
+    fpm { 0        196.8504   0 "speed velocity"           0 }
+    c { 0        2.99793e+8 0 "speed velocity"           0 }
+    in/s2 { 0        39.37008   0 acceleration               0 }
+    oz/ft2 { 0        3.2765     0 mass/area                	0 }
+    kg/s { 0        1          0 mass_flow          	0 }
+    dyn/cm2 { 0        10         0 pressure                   0 }
+    psi { 0        1.45038e-4 0 pressure                   0 }
+    cm3/s { 0        1e6        0 volume_flow                0 }
+    W/m2 { 0        1          0 "power/area heat_flux"     0 }
+    ft2/s { 0        10.76391   0 diffusivity                0 }
+    lbm/s-ft2 { 0        0.20483    0 mass_flow/area     	0 }
+    W/m3 { 0        1          0 "power/volume power_density"      0 }
+    g { 0        1000       0 mass                	0 }
+    slugs/ft-s { 0        0.02088555 0 viscosity          	0 }
+    BTU/lb-R { 0        2.38852e-4 0 sp_heat            	0 }
+    torr { 0        7.50063e-3 0 pressure                   0 }
+    lbf/ft2 { 0        2.08855e-2 0 pressure           	0 }
+    cm { 0        100        0 "length roughness" 	0 }
+    in_water { 0        4.01606e-3 0 pressure   		0 }
+    in/s { 0        39.37008   0 "speed velocity"           0 }
+    kg { 0        1          0 mass                	0 }
+    1/mm { 0        1e-3       0 1/length                   0 }
+    W/m-K { 0        1          0 conductivity       	0 }
+    1/C { 0        1          0 vol_expansion		0 }
+    ppmv { 0        1e6        0 concentration              0 }
+    erg/g-K { 0        10000      0 sp_heat            	0 }
+    BTU/hr { 0        3.4129693  0 "power heat rad_flux"   	0 }
+    1/mm2 { 0        1e-6       0 1/area             	0 }
+    m { 0        1          0 "length roughness" 	0 }
+    g/mol { 0        1          0 mol_weight                 0 }
+    cal/g-C { 0        2.38852e-4 0 sp_heat            	0 }
+    1/F { 0        .555555555 0 vol_expansion      	0 }
+    slug/ft3 { 0        1.94032e-3 0 density            	0 }
+    1/m2 { 0        1          0 1/area             	0 }
+    F-s/BTU { 0        1898.627   0 resistance          	0 }
+    poise { 0        10         0 viscosity          	0 }
+    1/ms { 0        1e-3       0 1/time               	0 }
+    g/s { 0        1000       0 mass_flow                  0 }
+    W/C { 0        1          0 conductance          	0 }
+    C/W { 0        1          0 resistance          	0 }
+    Pa { 0        1          0 pressure                   0 }
+    1/in2 { 0        6.45161e-4 0 1/area             	0 }
+    atm { 0        9.86923e-6 0 pressure                   0 }
+    1/ft { 0        0.3048     0 1/length                   0 }
+    inch { 0        39.37008   0 "length roughness" 	0 }
+    1/K { 0        1          0 vol_expansion      	0 }
+    s { 0        1          0 time               	0 }
+    1/ft2 { 0        0.09290304 0 1/area             	0 }
+    BTU/s { 0        9.48047e-4 0 "power heat rad_flux"      0 }
+    cal/g-K { 0        2.38852e-4 0 sp_heat            	0 }
+    fraction { 0        1          0 concentration              0 }
+    ft3/s { 0        35.31467   0 volume_flow                0 }
+    W/K { 0        1          0 conductance          	0 }
+    K/W { 0        1          0 resistance          	0 }
+    g/cm3 { 0        0.001      0 density            	0 }
+    identity { 0        1          0 ""                         0 }
+    1/R { 0        .555555555 0 vol_expansion      	0 }
+    m3/min { 0        60         0 volume_flow	        0 }
+    R-s/BTU { 0        1898.627   0 resistance          	0 }
+    cal/s-m-C { 0        0.23890    0 conductivity       	0 }
+    mm/s { 0        1000       0 "speed velocity"           0 }
+    C-m2/W { 0        1          0 impedance          	0 }
+    erg/cm-s-K { 0        1e5        0 conductivity       	0 }
+    1/microsec { 0        1e-6       0 1/time               	0 }
+    met { 0        0.017182130584193 0 "power/area heat_flux"     0 }
+    L/min { 0        60000      0 volume_flow                0 }
+    Cd { 0        1          0 temp_change        	0 }
+}
+array set unit_choices {
+    volume { m3 ft3 cm3 mm3 in3 }
+    heat_flux { W/m2 W/mm2 BTU/s-ft2 BTU/h-ft2 erg/cm2-s met}
+    density { kg/m3 lbm/ft3 slug/ft3 g/cm3 }
+    turbulent_o { m2/s3 ft2/s3 }
+    power/volume { W/m3 BTU/s-ft3 BTU/h-ft3 erg/cm3-s}
+    viscosity { kg/m-s lbm/ft-s poise lb/ft-s slugs/ft-s }
+    time { s ms microsec }
+    angle { deg }
+    conductance { W/C BTU/F-s W/K BTU/R-s BTU/F-h BTU/R-h }
+    mol_weight { kg/kmol g/mol}
+    1/length { 1/m 1/ft 1/cm 1/mm 1/in }
+    e_resistance { Ohm-m }
+    elect_current_density { Amp/m2 }
+    fan_curve { "" }
+    heat_tr_coeff { W/K-m2 BTU/ft2-s-F BTU/ft2-h-F W/C-m2 BTU/ft2-h-R 
+                      BTU/ft2-s-R  }
+    gr/lbm { gr/lbm }
+    extcoeff { m2/g }
+    power_density { W/m3 BTU/s-ft3 BTU/h-ft3 erg/cm3-s}
+    mass { kg lbm g gr }
+    impedance { C-m2/W C-in2/W C-mm2/W }
+    diffusivity { m2/s ft2/s cm2/s}
+    e_current { Amp }
+    g/kg { g/kg }
+    PMV { "" }
+    temp_change { Cd Fd Kd Rd }
+    losscoeff { "" }
+    vol_expansion { 1/K 1/R 1/C 1/F }
+    e_voltage { V }
+    emissivity { "" }
+    concentration { fraction ppmv }
+    1/area { 1/m2 1/ft2 1/cm2 1/mm2 1/in2 }
+    resistance { C/W F-s/BTU K/W R-s/BTU }
+    length {m ft cm mm microns in mil Cu-oz/ft2}
+    PPD { "" }
+    roughness { m ft cm mm microns in }
+    heat_capacity { J/kg-K J/kg-C }
+    xxx { "" }
+    pressure { N/m2 lbf/ft2 Pa atm psi torr dyn/cm2 in_water}
+    speed { m/s ft/s cm/s mm/s in/s fpm }
+    viscosity_ratio { "" }
+    sp_heat { J/kg-K BTU/lb-F J/kg-C BTU/lb-R cal/g-K cal/g-C
+	              kcal/kg-K kcal/kg-C erg/g-K }
+    power { W BTU/s BTU/hr HP erg/s}
+    rad_flux { W BTU/s BTU/hr HP erg/s}
+    1/time { 1/s 1/ms 1/microsec }
+    acceleration { m/s2 ft/s2 cm/s2 mm/s2 in/s2 }
+    mass_flow { kg/s lbm/s lbm/min g/s }
+    mass_flow/area { kg/s-m2 lbm/s-ft2 g/cm2-s}
+    conductivity { W/m-K BTU/s-ft-F BTU/h-ft-R W/m-C BTU/h-ft-F cal/s-m-C
+	              cal/s-m-K erg/cm-s-K }
+    temperature { C F K R }
+    area { m2 ft2 cm2 mm2 in2 microns2 }
+    heat { W BTU/s BTU/hr HP erg/s}
+    mass/area { kg/m2 oz/ft2 }
+    power/area { W/m2 W/mm2 BTU/s-ft2 BTU/h-ft2 erg/cm2-s met}
+    volume_flow { m3/s ft3/min m3/min ft3/s cfm cm3/s L/min }
+    turbulent_k { m2/s2 ft2/s2 }
+}
+array set unit_default {
+    density kg/m3
+    heat_flux W/m2
+    volume m3
+    turbulent_o m2/s3
+    power/volume W/m3
+    viscosity kg/m-s
+    mol_weight kg/kmol
+    conductance W/C
+    angle deg
+    time s
+    1/length 1/m
+    e_resistance Ohm-m
+    elect_current_density Amp/m2
+    fan_curve {}
+    heat_tr_coeff W/K-m2
+    gr/lbm gr/lbm
+    extcoeff m2/g
+    power_density W/m3
+    mass kg
+    impedance C-m2/W
+    diffusivity m2/s
+    e_current Amp
+    g/kg g/kg
+    PMV {}
+    temp_change Cd
+    losscoeff {}
+    vol_expansion 1/K
+    e_voltage V
+    emissivity {}
+    concentration fraction
+    1/area 1/m2
+    resistance C/W
+    length m
+    PPD {}
+    roughness m
+    heat_capacity J/kg-K
+    xxx {}
+    pressure N/m2
+    speed m/s
+    viscosity_ratio {}
+    sp_heat J/kg-K
+    power W
+    rad_flux W
+    1/time 1/s
+    acceleration m/s2
+    mass_flow kg/s
+    mass_flow/area kg/s-m2
+    conductivity W/m-K
+    temperature C
+    area m2
+    heat W
+    mass/area kg/m2
+    power/area W/m2
+    turbulent_k m2/s2
+    volume_flow m3/s
+}
+set library_path {{$ICEPAK_ROOT/icepak_lib}}
+array set pipe_mesh_params {
+    init_height 0
+    ogrid_height 0.5
+    on 0
+    height_ratio 1.1
+    max_length 0
+}
+array set type_visible {
+    opening 1
+    resistance 1
+    block 1
+    package 1
+    names 1
+    plate 1
+    heatsink 1
+    cad_line 0
+    part 1
+    ventres 1
+    wall 1
+    enclosure 1
+    domain 1
+    source 1
+    cad_point 0
+    network 1
+    blower 1
+    fan 1
+    pcb 1
+    vent 0
+    heat_exchanger 1
+    material 1
+    periodic 1
+}
+set cad_show_used 0
+set cad_show_unused 1
+set cad_on_interface 1
+set custom_job_directory {}
+set custom_file_directory {}
+set custom_scriptfile_directory {}
+set named_point_move_with_object 1
+set ice_ekm 0
+set interp_option 1
+set solve_nodewt 1
+set solve_transient_cudf 0
+set ff_tolerance 0.0
+set ff_tolerance_display 0.01
+set ff_tolerance_coarsen 1e-3
+set ff_division_level 7
+set ff_minval 1e-5
+set ff_show_self 1
+set ff_compute_method hemi
+set ff_compute_level coarse
+set ff_handle_small_gaps 1
+array set species {
+    type2 fraction
+    count 2
+    initval2 0.007
+    maxnum 12
+    name1 Air
+    name2 h2o
+    enabled 0
+}
+set default_fluid_material Air
+set default_solid_material Al-Extruded
+set default_surface_material Steel-Oxidised-surface
+array set post_units {
+    volume m3
+    heat_flux W/m2
+    resistance C/W
+    heat_tr_coeff W/K-m2
+    acceleration m/s2
+    length m
+    turbulent_o m2/s3
+    mass_flow/area kg/s-m2
+    mass_flow kg/s
+    PPD identity
+    power/volume W/m3
+    conductivity W/m-K
+    temperature C
+    angle deg
+    time s
+    area m2
+    speed m/s
+    pressure N/m2
+    heat W
+    PMV identity
+    viscosity_ratio identity
+    rad_flux W
+    e_voltage V
+    elect_current_density Amp/m2
+    concentration fraction
+    1/time 1/s
+    turbulent_k m2/s2
+    volume_flow m3/s
+}
+array set named_point {
+    names {}
+}
+array set named_surface {
+    names {}
+}
+array set autotherm_output {
+    plane 2
+    file {}
+    reftemp_units C
+    numi 50
+    numj 50
+    reftemp {}
+}
+array set solar_load {
+    dfsi_trans_sin_t 0.0
+    lon 73.97
+    e_w W
+    dsi_trans_power_a 0.0
+    dsi_trans_power_b 0.0
+    angle 60.0
+    dsi_trans_sin_a 0.0
+    lat 40.78
+    dsi_trans_linear_a 0.0
+    dfsi_trans_power_a 0.0
+    dfsi_trans_square_offval 0.0
+    dfsi_trans_power_b 0.0
+    dsi_transient 0
+    dfsi_trans_square_on 0.0
+    dsi_trans_exp_a 0.0
+    split 0.5
+    asdobc 0
+    dsi_trans_exp_b 0.0
+    dfsi_trans_square_phase 0.0
+    on 0
+    dfsi_transient 0
+    hour 12
+    n_s N
+    dsi 100.0
+    scat_fract 0.0
+    dsi_trans_sin_t 0.0
+    dsi_trans_square_phase 0.0
+    dfsi_trans_curve {}
+    angle_units deg
+    fair_weather 1
+    dsi_trans_square_off 0.0
+    air_refract 1.0
+    dsi_units W/m2
+    dsi_trans_sin_t0 0.0
+    lsm -5
+    dsi_trans_square_offval 0.0
+    dfsi_trans_type linear
+    dfsi_units W/m2
+    dsi_trans_square_on 0.0
+    max_qtr 7
+    dfsi_trans_sin_a 0.0
+    month 1
+    date 1
+    sunshine_frac 1.0
+    dsi_trans_type linear
+    vec_x 1.0
+    vec_y 0.0
+    dfsi_trans_square_off 0.0
+    vec_z 0.0
+    dfsi_trans_sin_t0 0.0
+    dfsi_trans_exp_a 0.0
+    dfsi_trans_exp_b 0.0
+    minute 0
+    dsi_trans_curve {}
+    dfsi 7.0
+    ground_refl 0.2
+    dfsi_trans_linear_a 0.0
+}
+set spec_solar_fl 0
+array set disco {
+    pp 1
+    tp 1
+    pd 1
+    td 1
+    fiter 1
+}
+array set ray {
+    fc 20
+    miter 5
+    res 5
+    riter 1
+}
+array set montecarlo {
+    cc 1
+    histories 100000
+    riter 10
+}
+set transient_use_patch 0
+set vol_losses_on 0
+set sur_losses_on 0
+set em_freq {}
+set em_feed_back 0
+set report_full_var Temperature
+set report_full_region all
+set report_full_obtype {}
+set report_full_obname {}
+set report_full_onlyhead 1
+set report_full_whichsides all
+set report_full_timetype value
+set report_full_timevalue 0
+set report_full_timestep 1
+set report_full_writefile 1
+set report_full_writewindow 1
+set report_full_derived_flow 1
+set report_full_derived_flux_type total
+set report_full_derived_ref_type specified
+set report_full_derived_ref_temp ambient
+set report_full_derived_ref_height 0
+array set report_summary {
+    writesuffix .report
+    count 0
+    facet_values 0
+    incfans 0
+    all_times 0
+    timestep 1
+    writewindow 1
+    writefilename {}
+    sol_trans 0
+    sol_all 0
+    incnetworks 0
+    all_sides 0
+    incoverview 0
+    timetype value
+    writefile 0
+    timevalue 0.0
+    obj_top 0
+    sol_pats *
+    incpoints 1
+}
+array set report_point {
+    writefilename {}
+    timevalue 0.0
+    count 0
+    timetype value
+    all_times 0
+    writefile 0
+    writewindow 1
+    timestep 0
+}
+array set report_variables {
+    Area/volume 1
+    Mean 1
+    {Time Value} 1
+    Total 1
+    Section 1
+    Object 1
+    Sides 1
+    {Solution ID} 1
+    {Time Step} 1
+    Min 1
+    Mesh 1
+    Value 1
+    Max 1
+    Stdev 1
+}
+array set opt_design_var {
+    names {}
+}
+array set opt_option {
+    show_diags 0
+    type single
+    ff_lock_values 1
+    tol_f 0.001
+    trial_list_trials_across 0
+    tol_design 0.01
+    trial_list_changing_vars 1
+    tol_cons 0.001
+    perturb 0.1
+    cleanup_trials bestonly
+    max_iterations 25
+    move 0.2
+}
+set opt_saved_random_stuff {}
+set simplorer 0
+set sspace_input_objects {}
+set sspace_output_objects {}
+set sspace_input_power 5.0
+set ss_krylov 0
+set krylov_input_objects {}
+set krylov_cons_order 3
+set krylov_eval_order 3
+set krylov_heat_flux 0
+set krylov_eval_times 0.0
+set krylov_trans_id transient00
+catch {tdv_set_background_info current {#6b8cde} {#ffffff} {1}}

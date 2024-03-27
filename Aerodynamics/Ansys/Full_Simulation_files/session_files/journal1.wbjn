@@ -1,0 +1,11 @@
+# encoding: utf-8
+# 2023 R2
+SetScriptVersion(Version="23.2.142")
+Save(Overwrite=True)
+template1 = GetTemplate(TemplateName="Fluid Flow")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath=GetAbsoluteUserPathName("GitHub/vandymotorsports/Aerodynamics/Radiator Simulation/SIDEPOD_Simulation_Block_STEP.STEP"))
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+geometryComponent1.Reset()
+Save(Overwrite=True)
