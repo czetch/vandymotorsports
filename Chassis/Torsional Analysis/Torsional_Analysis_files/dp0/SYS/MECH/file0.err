@@ -1,0 +1,10 @@
+/COM,ANSYS RELEASE 2024 R2           BUILD 24.2      UP20240603       16:16:25
+
+ *** WARNING ***                         CP =       0.234   TIME= 16:16:25
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** ERROR ***                           CP =       0.281   TIME= 16:16:26
+ There is at least 1 small equation solver pivot term (e.g., at the UZ   
+ degree of freedom of node 719).  Please check for an insufficiently     
+ constrained model.                                                      
