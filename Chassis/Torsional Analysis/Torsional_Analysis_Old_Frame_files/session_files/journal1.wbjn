@@ -1,0 +1,40 @@
+# encoding: utf-8
+# 2024 R2
+SetScriptVersion(Version="24.2.133")
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+material1.Delete()
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.OpenLibrary(
+    Name="ANSYS GRANTA Materials Data for Simulation (Sample)",
+    Source="Granta_Design_Typical_Materials.xml")
+library2 = EngData.OpenLibrary(
+    Name="General Materials",
+    Source="General_Materials.xml")
+matl1 = engineeringData1.ImportMaterial(
+    Name="Structural Steel",
+    Source="General_Materials.xml")
+EngData.EnableFilter(Enable=False)
+EngData.EnableFilter()
+matlProp1 = matl1.GetProperty(Name="Tensile Yield Strength")
+matlProp1.SetData(
+    Variables=["Tensile Yield Strength"],
+    Values=[["460000000 [Pa]"]])
+matlProp2 = matl1.GetProperty(Name="Tensile Ultimate Strength")
+matlProp2.SetData(
+    Variables=["Tensile Ultimate Strength"],
+    Values=[["560000000 [Pa]"]])
+Save(Overwrite=True)
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath=GetAbsoluteUserPathName("GitHub/vandymotorsports/Chassis/Torsional Analysis/Frame2025_Parasolid.x_t"))
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
