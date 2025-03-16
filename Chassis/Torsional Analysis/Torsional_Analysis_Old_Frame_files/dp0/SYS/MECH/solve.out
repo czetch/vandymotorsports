@@ -204,13 +204,13 @@
   DISTRIBUTED MEMORY PARALLEL REQUESTED
        4 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
     TOTAL OF     4 CORES REQUESTED
-  INPUT FILE NAME              = C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\_ProjectScratch\ScrD265\dummy.dat
-  OUTPUT FILE NAME             = C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\_ProjectScratch\ScrD265\solve.out
+  INPUT FILE NAME              = C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\_ProjectScratch\Scr71ED\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\_ProjectScratch\Scr71ED\solve.out
   START-UP FILE MODE           = NOREAD
   STOP FILE MODE               = NOREAD
 
  RELEASE= 2024 R2              BUILD= 24.2      UP20240603   VERSION=WINDOWS x64 
- CURRENT JOBNAME=file0  17:11:39  MAR 05, 2025 CP=      0.062
+ CURRENT JOBNAME=file0  23:40:29  MAR 15, 2025 CP=      0.062
 
 
  PARAMETER _DS_PROGRESS =     999.0000000    
@@ -219,14 +219,14 @@
 
 
 
- *** NOTE ***                            CP =       0.297   TIME= 17:11:39
+ *** NOTE ***                            CP =       0.266   TIME= 23:40:29
  The /CONFIG,NOELDB command is not valid in a distributed memory         
  parallel solution.  Command is ignored.                                 
 
- *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  17.1941667    
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  23.6747222    
 
  TITLE= 
- Torsional_Analysis_v2--Static Structural (A5)                                 
+ Torsional_Analysis_Old_Frame--Static Structural (A5)                          
 
   ACT Extensions:
       LSDYNA, 2024.2
@@ -238,17 +238,17 @@
  SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
   TYPE=STRI  DIMENSIONS=      248        1        1
 
- PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\_ProjectScratch\ScrD265\
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\_ProjectScratch\Scr71ED\
 
  SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
   TYPE=STRI  DIMENSIONS=      248        1        1
 
- PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\Torsional_Analysis_v2_files\dp0\SYS\MECH\
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\Torsional_Analysis_Old_Frame_files\dp0\SYS\MECH\
 
  SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
   TYPE=STRI  DIMENSIONS=      248        1        1
 
- PARAMETER _WB_USERFILES_DIR(1) = C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\Torsional_Analysis_v2_files\user_files\
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\Torsional_Analysis_Old_Frame_files\user_files\
  --- Data in consistent MKS units. See Solving Units in the help system for more
 
  MKS UNITS SPECIFIED FOR INTERNAL    
@@ -275,9 +275,9 @@
 
  *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R2          24.2     ***
  Ansys Mechanical Enterprise Academic Teaching     
- 01059839  VERSION=WINDOWS x64   17:11:39  MAR 05, 2025 CP=      0.312
+ 01059839  VERSION=WINDOWS x64   23:40:29  MAR 15, 2025 CP=      0.281
 
- Torsional_Analysis_v2--Static Structural (A5)                                 
+ Torsional_Analysis_Old_Frame--Static Structural (A5)                          
 
 
 
@@ -285,35 +285,35 @@
  *********** Nodes for the whole assembly ***********
  *********** Nodes for all Remote Points ***********
  *********** Elements for Body 1 'Beam (Extracted Profile1)' ***********
- *********** Elements for Body 2 'Beam (Extracted Profile2)' ***********
- *********** Elements for Body 3 'Beam (Extracted Profile1)' ***********
+ *********** Elements for Body 2 'Beam (Extracted Profile1)' ***********
+ *********** Elements for Body 3 'Beam (Extracted Profile2)' ***********
  *********** Elements for Body 4 'Beam (Extracted Profile2)' ***********
  *********** Elements for Body 5 'Beam (Extracted Profile1)' ***********
  *********** Elements for Body 6 'Beam (Extracted Profile1)' ***********
- *********** Elements for Body 7 'Beam (Extracted Profile15)' ***********
- *********** Elements for Body 8 'Beam (Extracted Profile9)' ***********
- *********** Elements for Body 9 'Beam (Extracted Profile10)' ***********
- *********** Elements for Body 10 'Beam (Extracted Profile10)' ***********
- *********** Elements for Body 11 'Beam (Extracted Profile8)' ***********
- *********** Elements for Body 12 'Beam (Extracted Profile11)' ***********
- *********** Elements for Body 13 'Beam (Extracted Profile9)' ***********
- *********** Elements for Body 14 'Beam (Extracted Profile10)' ***********
+ *********** Elements for Body 7 'Beam (Extracted Profile5)' ***********
+ *********** Elements for Body 8 'Beam (Extracted Profile6)' ***********
+ *********** Elements for Body 9 'Beam (Extracted Profile7)' ***********
+ *********** Elements for Body 10 'Beam (Extracted Profile9)' ***********
+ *********** Elements for Body 11 'Beam (Extracted Profile7)' ***********
+ *********** Elements for Body 12 'Beam (Extracted Profile10)' ***********
+ *********** Elements for Body 13 'Beam (Extracted Profile10)' ***********
+ *********** Elements for Body 14 'Beam (Extracted Profile9)' ***********
  *********** Elements for Body 15 'Beam (Extracted Profile8)' ***********
- *********** Elements for Body 16 'Beam (Extracted Profile8)' ***********
- *********** Elements for Body 17 'Beam (Extracted Profile9)' ***********
- *********** Elements for Body 18 'Beam (Extracted Profile8)' ***********
- *********** Elements for Body 19 'Beam (Extracted Profile6)' ***********
- *********** Elements for Body 20 'Beam (Extracted Profile11)' ***********
- *********** Elements for Body 21 'Beam (Extracted Profile8)' ***********
- *********** Elements for Body 22 'Beam (Extracted Profile17)' ***********
- *********** Elements for Body 23 'Beam (Extracted Profile17)' ***********
+ *********** Elements for Body 16 'Beam (Extracted Profile7)' ***********
+ *********** Elements for Body 17 'Beam (Extracted Profile7)' ***********
+ *********** Elements for Body 18 'Beam (Extracted Profile7)' ***********
+ *********** Elements for Body 19 'Beam (Extracted Profile7)' ***********
+ *********** Elements for Body 20 'Beam (Extracted Profile17)' ***********
+ *********** Elements for Body 21 'Beam (Extracted Profile3)' ***********
+ *********** Elements for Body 22 'Beam (Extracted Profile19)' ***********
+ *********** Elements for Body 23 'Beam (Extracted Profile18)' ***********
  *********** Elements for Body 24 'Beam (Extracted Profile11)' ***********
- *********** Elements for Body 25 'Beam (Extracted Profile6)' ***********
- *********** Elements for Body 26 'Beam (Extracted Profile5)' ***********
+ *********** Elements for Body 25 'Beam (Extracted Profile12)' ***********
+ *********** Elements for Body 26 'Beam (Extracted Profile4)' ***********
  *********** Elements for Body 27 'Beam (Extracted Profile4)' ***********
- *********** Elements for Body 28 'Beam (Extracted Profile3)' ***********
- *********** Elements for Body 29 'Beam (Extracted Profile7)' ***********
- *********** Elements for Body 30 'Beam (Extracted Profile12)' ***********
+ *********** Elements for Body 28 'Beam (Extracted Profile7)' ***********
+ *********** Elements for Body 29 'Beam (Extracted Profile8)' ***********
+ *********** Elements for Body 30 'Beam (Extracted Profile10)' ***********
  *********** Send User Defined Coordinate System(s) ***********
  *********** Set Reference Temperature ***********
  *********** Send Materials ***********
@@ -331,18 +331,18 @@
  *** Create a component for all remote displacements ***
 
 
- ***** ROUTINE COMPLETED *****  CP =         0.375
+ ***** ROUTINE COMPLETED *****  CP =         0.328
 
 
- --- Number of total nodes = 1038
+ --- Number of total nodes = 1076
  --- Number of contact elements = 8
  --- Number of spring elements = 0
  --- Number of bearing elements = 0
- --- Number of solid elements = 550
+ --- Number of solid elements = 574
  --- Number of condensed parts = 0
- --- Number of total elements = 570
+ --- Number of total elements = 594
 
- *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  17.1941667    
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  23.6747222    
  ****************************************************************************
  *************************    SOLUTION       ********************************
  ****************************************************************************
@@ -382,57 +382,57 @@
  ******************* SOLVE FOR LS 1 OF 1 ****************
 
  SELECT       FOR ITEM=NODE COMPONENT=    
-  IN RANGE      1035 TO       1035 STEP          1
+  IN RANGE      1073 TO       1073 STEP          1
 
-          1  NODES (OF       1038  DEFINED) SELECTED BY  NSEL  COMMAND.
+          1  NODES (OF       1076  DEFINED) SELECTED BY  NSEL  COMMAND.
 
- SPECIFIED NODAL LOAD FX   FOR SELECTED NODES         1 TO     1038 BY        1
+ SPECIFIED NODAL LOAD FX   FOR SELECTED NODES         1 TO     1076 BY        1
   REAL=  0.00000000       IMAG=  0.00000000    
 
- SPECIFIED NODAL LOAD FY   FOR SELECTED NODES         1 TO     1038 BY        1
+ SPECIFIED NODAL LOAD FY   FOR SELECTED NODES         1 TO     1076 BY        1
   REAL=  1000.00000       IMAG=  0.00000000    
 
- SPECIFIED NODAL LOAD FZ   FOR SELECTED NODES         1 TO     1038 BY        1
+ SPECIFIED NODAL LOAD FZ   FOR SELECTED NODES         1 TO     1076 BY        1
   REAL=  0.00000000       IMAG=  0.00000000    
 
  SELECT       FOR ITEM=NODE COMPONENT=    
-  IN RANGE      1036 TO       1036 STEP          1
+  IN RANGE      1074 TO       1074 STEP          1
 
-          1  NODES (OF       1038  DEFINED) SELECTED BY  NSEL  COMMAND.
+          1  NODES (OF       1076  DEFINED) SELECTED BY  NSEL  COMMAND.
 
- SPECIFIED NODAL LOAD FX   FOR SELECTED NODES         1 TO     1038 BY        1
+ SPECIFIED NODAL LOAD FX   FOR SELECTED NODES         1 TO     1076 BY        1
   REAL=  0.00000000       IMAG=  0.00000000    
 
- SPECIFIED NODAL LOAD FY   FOR SELECTED NODES         1 TO     1038 BY        1
+ SPECIFIED NODAL LOAD FY   FOR SELECTED NODES         1 TO     1076 BY        1
   REAL= -1000.00000       IMAG=  0.00000000    
 
- SPECIFIED NODAL LOAD FZ   FOR SELECTED NODES         1 TO     1038 BY        1
+ SPECIFIED NODAL LOAD FZ   FOR SELECTED NODES         1 TO     1076 BY        1
   REAL=  0.00000000       IMAG=  0.00000000    
 
  ALL SELECT   FOR ITEM=NODE COMPONENT=    
-  IN RANGE         1 TO       1038 STEP          1
+  IN RANGE         1 TO       1076 STEP          1
 
-       1038  NODES (OF       1038  DEFINED) SELECTED BY NSEL  COMMAND.
+       1076  NODES (OF       1076  DEFINED) SELECTED BY NSEL  COMMAND.
 
- SPECIFIED CONSTRAINT UZ   FOR SELECTED NODES         1037 TO        1037 BY           1
+ SPECIFIED CONSTRAINT UZ   FOR SELECTED NODES         1075 TO        1075 BY           1
  REAL=  0.00000000       IMAG=  0.00000000    
 
- SPECIFIED CONSTRAINT UX   FOR SELECTED NODES         1038 TO        1038 BY           1
+ SPECIFIED CONSTRAINT UX   FOR SELECTED NODES         1076 TO        1076 BY           1
  REAL=  0.00000000       IMAG=  0.00000000    
 
- SPECIFIED CONSTRAINT UY   FOR SELECTED NODES         1038 TO        1038 BY           1
+ SPECIFIED CONSTRAINT UY   FOR SELECTED NODES         1076 TO        1076 BY           1
  REAL=  0.00000000       IMAG=  0.00000000    
 
- SPECIFIED CONSTRAINT UZ   FOR SELECTED NODES         1038 TO        1038 BY           1
+ SPECIFIED CONSTRAINT UZ   FOR SELECTED NODES         1076 TO        1076 BY           1
  REAL=  0.00000000       IMAG=  0.00000000    
 
- SPECIFIED CONSTRAINT ROTX FOR SELECTED NODES         1038 TO        1038 BY           1
+ SPECIFIED CONSTRAINT ROTX FOR SELECTED NODES         1076 TO        1076 BY           1
  REAL=  0.00000000       IMAG=  0.00000000    
 
- SPECIFIED CONSTRAINT ROTY FOR SELECTED NODES         1038 TO        1038 BY           1
+ SPECIFIED CONSTRAINT ROTY FOR SELECTED NODES         1076 TO        1076 BY           1
  REAL=  0.00000000       IMAG=  0.00000000    
 
- SPECIFIED CONSTRAINT ROTZ FOR SELECTED NODES         1038 TO        1038 BY           1
+ SPECIFIED CONSTRAINT ROTZ FOR SELECTED NODES         1076 TO        1076 BY           1
  REAL=  0.00000000       IMAG=  0.00000000    
 
  PRINTOUT RESUMED BY /GOP
@@ -489,21 +489,21 @@
 
  *ENDIF
 
- *** NOTE ***                            CP =       0.453   TIME= 17:11:39
+ *** NOTE ***                            CP =       0.422   TIME= 23:40:29
  The automatic domain decomposition logic has selected the MESH domain   
  decomposition method with 4 processes per solution.                     
 
  *****  MAPDL SOLVE    COMMAND  *****
 
- *** WARNING ***                         CP =       0.453   TIME= 17:11:39
+ *** WARNING ***                         CP =       0.422   TIME= 23:40:29
  Element shape checking is currently inactive.  Issue SHPP,ON or         
  SHPP,WARN to reactivate, if desired.                                    
 
- *** NOTE ***                            CP =       0.453   TIME= 17:11:39
+ *** NOTE ***                            CP =       0.422   TIME= 23:40:29
  The model data was checked and warning messages were found.             
   Please review output or errors file (                                  
  C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsi 
- onal Analysis\_ProjectScratch\ScrD265\file0.err ) for these warning     
+ onal Analysis\_ProjectScratch\Scr71ED\file0.err ) for these warning     
  messages.                                                               
 
  *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
@@ -723,9 +723,9 @@
 
  *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R2          24.2     ***
  Ansys Mechanical Enterprise Academic Teaching     
- 01059839  VERSION=WINDOWS x64   17:11:39  MAR 05, 2025 CP=      0.469
+ 01059839  VERSION=WINDOWS x64   23:40:29  MAR 15, 2025 CP=      0.422
 
- Torsional_Analysis_v2--Static Structural (A5)                                 
+ Torsional_Analysis_Old_Frame--Static Structural (A5)                          
 
 
 
@@ -738,21 +738,21 @@
    EQUATION SOLVER OPTION. . . . . . . . . . . . .SPARSE             
    GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
 
- *** NOTE ***                            CP =       0.469   TIME= 17:11:39
+ *** NOTE ***                            CP =       0.422   TIME= 23:40:29
  The conditions for direct assembly have been met.  No .emat or .erot    
  files will be produced.                                                 
 
  TRIM CONTACT/TARGET SURFACE
 
- *** NOTE ***                            CP =       0.469   TIME= 17:11:39
- Internal nodes from 1039 to 1592 are created.                           
+ *** NOTE ***                            CP =       0.422   TIME= 23:40:29
+ Internal nodes from 1077 to 1654 are created.                           
  4 internal nodes are used for handling degrees of freedom on pilot      
  nodes of rigid target surfaces.                                         
- 550 internal nodes are used for quadratic and/or cubic options of       
+ 574 internal nodes are used for quadratic and/or cubic options of       
  BEAM188, PIPE288, and/or SHELL208.                                      
 
- *** NOTE ***                            CP =       0.469   TIME= 17:11:39
- Internal nodes from 1039 to 1078 are created.                           
+ *** NOTE ***                            CP =       0.422   TIME= 23:40:29
+ Internal nodes from 1077 to 1116 are created.                           
  4 internal nodes are used for handling degrees of freedom on pilot      
  nodes of rigid target surfaces.                                         
  36 internal nodes are used for quadratic and/or cubic options of        
@@ -762,44 +762,44 @@
  CHECK INITIAL OPEN/CLOSED STATUS OF SELECTED CONTACT ELEMENTS
       AND LIST DETAILED CONTACT PAIR INFORMATION
 
- *** NOTE ***                            CP =       0.469   TIME= 17:11:39
- Internal nodes from 1039 to 1592 are created.                           
+ *** NOTE ***                            CP =       0.438   TIME= 23:40:29
+ Internal nodes from 1077 to 1654 are created.                           
  4 internal nodes are used for handling degrees of freedom on pilot      
  nodes of rigid target surfaces.                                         
- 550 internal nodes are used for quadratic and/or cubic options of       
+ 574 internal nodes are used for quadratic and/or cubic options of       
  BEAM188, PIPE288, and/or SHELL208.                                      
 
- *** NOTE ***                            CP =       0.469   TIME= 17:11:39
- Internal nodes from 1039 to 1078 are created.                           
+ *** NOTE ***                            CP =       0.438   TIME= 23:40:29
+ Internal nodes from 1077 to 1116 are created.                           
  4 internal nodes are used for handling degrees of freedom on pilot      
  nodes of rigid target surfaces.                                         
  36 internal nodes are used for quadratic and/or cubic options of        
  BEAM188, PIPE288, and/or SHELL208.                                      
 
- *** NOTE ***                            CP =       0.484   TIME= 17:11:39
+ *** NOTE ***                            CP =       0.438   TIME= 23:40:29
  The maximum number of contact elements in any single contact pair is 0, 
  which is smaller than the optimal domain size of 120 elements for the   
  given number of CPU domains (4).  Therefore, no contact pairs are       
  being split by the CNCH,DMP logic.                                      
 
- *** NOTE ***                            CP =       0.484   TIME= 17:11:39
- Internal nodes from 1039 to 1592 are created.                           
+ *** NOTE ***                            CP =       0.438   TIME= 23:40:29
+ Internal nodes from 1077 to 1654 are created.                           
  4 internal nodes are used for handling degrees of freedom on pilot      
  nodes of rigid target surfaces.                                         
- 550 internal nodes are used for quadratic and/or cubic options of       
+ 574 internal nodes are used for quadratic and/or cubic options of       
  BEAM188, PIPE288, and/or SHELL208.                                      
 
- *** NOTE ***                            CP =       0.484   TIME= 17:11:39
- Internal nodes from 1039 to 1078 are created.                           
+ *** NOTE ***                            CP =       0.438   TIME= 23:40:29
+ Internal nodes from 1077 to 1116 are created.                           
  4 internal nodes are used for handling degrees of freedom on pilot      
  nodes of rigid target surfaces.                                         
  36 internal nodes are used for quadratic and/or cubic options of        
  BEAM188, PIPE288, and/or SHELL208.                                      
 
- *** NOTE ***                            CP =       0.484   TIME= 17:11:39
+ *** NOTE ***                            CP =       0.438   TIME= 23:40:29
  Rigid-constraint surface identified by real constant set 31 and         
  contact element type 31 has been set up.  The degrees of freedom of     
- rigid surface are driven by the pilot node 1035.  Internal MPC will be  
+ rigid surface are driven by the pilot node 1073.  Internal MPC will be  
  built.                                                                  
  This pair will be merged with other pair defined by real constant set   
  35.                                                                     
@@ -809,10 +809,10 @@
  ****************************************
   
 
- *** NOTE ***                            CP =       0.484   TIME= 17:11:39
+ *** NOTE ***                            CP =       0.438   TIME= 23:40:29
  Rigid-constraint surface identified by real constant set 33 and         
  contact element type 33 has been set up.  The degrees of freedom of     
- rigid surface are driven by the pilot node 1036.  Internal MPC will be  
+ rigid surface are driven by the pilot node 1074.  Internal MPC will be  
  built.                                                                  
  This pair will be merged with other pair defined by real constant set   
  35.                                                                     
@@ -822,9 +822,9 @@
  ****************************************
   
 
- *** NOTE ***                            CP =       0.484   TIME= 17:11:39
+ *** NOTE ***                            CP =       0.438   TIME= 23:40:29
  Rigid target surface identified by real constant set 35.  The degrees   
- of freedom of the rigid surface are driven by the pilot node 1037.      
+ of freedom of the rigid surface are driven by the pilot node 1075.      
  Internal MPC will be built.                                             
  Boundary conditions can be applied on any target node.
  The rigid surface does not overlap other elements.                      
@@ -834,9 +834,9 @@
  ****************************************
   
 
- *** NOTE ***                            CP =       0.484   TIME= 17:11:39
+ *** NOTE ***                            CP =       0.438   TIME= 23:40:29
  Rigid target surface identified by real constant set 36.  The degrees   
- of freedom of the rigid surface are driven by the pilot node 1038.      
+ of freedom of the rigid surface are driven by the pilot node 1076.      
  Internal MPC will be built.                                             
  Boundary conditions can be applied on any target node.
  The rigid surface does not overlap other elements.                      
@@ -846,21 +846,21 @@
   
   
 
- *** NOTE ***                            CP =       0.484   TIME= 17:11:39
- Internal nodes from 1039 to 1592 are created.                           
+ *** NOTE ***                            CP =       0.438   TIME= 23:40:29
+ Internal nodes from 1077 to 1654 are created.                           
  4 internal nodes are used for handling degrees of freedom on pilot      
  nodes of rigid target surfaces.                                         
- 550 internal nodes are used for quadratic and/or cubic options of       
+ 574 internal nodes are used for quadratic and/or cubic options of       
  BEAM188, PIPE288, and/or SHELL208.                                      
 
   
   
      D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
   
-  ...Number of elements: 570
-  ...Number of nodes:    1592
+  ...Number of elements: 594
+  ...Number of nodes:    1654
   ...Decompose to 4 CPU domains
-  ...Element load balance ratio =     1.022
+  ...Element load balance ratio =     1.028
 
 
                       L O A D   S T E P   O P T I O N S
@@ -886,14 +886,14 @@
 
 
  SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
- *WARNING*: Node 73 has been used on different contact pairs (real ID 35 
+ *WARNING*: Node 75 has been used on different contact pairs (real ID 35 
  & 31).  These two pairs will be merged.  Please check the model         
  carefully.                                                              
 
- *** NOTE ***                            CP =       0.531   TIME= 17:11:39
+ *** NOTE ***                            CP =       0.516   TIME= 23:40:29
  Rigid-constraint surface identified by real constant set 31 and         
  contact element type 31 has been set up.  The degrees of freedom of     
- rigid surface are driven by the pilot node 1035.  Internal MPC will be  
+ rigid surface are driven by the pilot node 1073.  Internal MPC will be  
  built.                                                                  
  This pair will be merged with other pair defined by real constant set   
  35.                                                                     
@@ -903,10 +903,10 @@
  ****************************************
   
 
- *** NOTE ***                            CP =       0.531   TIME= 17:11:39
+ *** NOTE ***                            CP =       0.516   TIME= 23:40:29
  Rigid-constraint surface identified by real constant set 33 and         
  contact element type 33 has been set up.  The degrees of freedom of     
- rigid surface are driven by the pilot node 1036.  Internal MPC will be  
+ rigid surface are driven by the pilot node 1074.  Internal MPC will be  
  built.                                                                  
  This pair will be merged with other pair defined by real constant set   
  35.                                                                     
@@ -916,9 +916,9 @@
  ****************************************
   
 
- *** NOTE ***                            CP =       0.531   TIME= 17:11:39
+ *** NOTE ***                            CP =       0.516   TIME= 23:40:29
  Rigid target surface identified by real constant set 35.  The degrees   
- of freedom of the rigid surface are driven by the pilot node 1037.      
+ of freedom of the rigid surface are driven by the pilot node 1075.      
  Internal MPC will be built.                                             
  Boundary conditions can be applied on any target node.
  This pair will be merged with other pair defined by real constant set   
@@ -927,7 +927,7 @@
  ****************************************
   
 
- *** NOTE ***                            CP =       0.531   TIME= 17:11:39
+ *** NOTE ***                            CP =       0.516   TIME= 23:40:29
  Predictor is ON by default for structural elements with rotational      
  degrees of freedom.  Use the PRED,OFF command to turn the predictor     
  OFF if it adversely affects the convergence.                            
@@ -941,210 +941,210 @@
 
    TOTAL RIGID BODY MASS MATRIX ABOUT ORIGIN
                Translational mass               |   Coupled translational/rotational mass
-         32.883        0.0000        0.0000     |     0.0000       -37.921       -9.7971    
-         0.0000        32.883        0.0000     |     37.921        0.0000       0.11861E-02
-         0.0000        0.0000        32.883     |     9.7971      -0.11861E-02    0.0000    
+         33.560        0.0000        0.0000     |     0.0000       -19.566       -10.529    
+         0.0000        33.560        0.0000     |     19.566        0.0000       0.22075E-02
+         0.0000        0.0000        33.560     |     10.529      -0.22075E-02    0.0000    
      ------------------------------------------ | ------------------------------------------
                                                 |         Rotational mass (inertia)
-                                                |     63.227       0.26575E-02   0.26752E-02
-                                                |    0.26575E-02    59.771        11.846    
-                                                |    0.26752E-02    11.846        7.2463    
+                                                |     31.059      -0.41083E-02   0.37515E-02
+                                                |   -0.41083E-02    27.857        6.3343    
+                                                |    0.37515E-02    6.3343        6.8892    
 
-   TOTAL MASS =  32.883    
+   TOTAL MASS =  33.560    
      The mass principal axes coincide with the global Cartesian axes
 
-   CENTER OF MASS (X,Y,Z)=   0.36070E-04   0.29794       -1.1532    
+   CENTER OF MASS (X,Y,Z)=   0.65778E-04   0.31373      -0.58302    
 
    TOTAL INERTIA ABOUT CENTER OF MASS
-         16.576       0.30109E-02   0.13073E-02
-        0.30109E-02    16.039       0.54753    
-        0.13073E-02   0.54753        4.3273    
+         16.348      -0.34158E-02   0.24645E-02
+       -0.34158E-02    16.449       0.19577    
+        0.24645E-02   0.19577        3.5860    
 
-   PRINCIPAL INERTIAS =    16.576        16.065        4.3018    
+   PRINCIPAL INERTIAS =    16.348        16.452        3.5831    
    ORIENTATION VECTORS OF THE INERTIA PRINCIPAL AXES IN GLOBAL CARTESIAN
-     ( 1.000, 0.006, 0.000) (-0.006, 0.999, 0.047) (-0.000,-0.047, 0.999) 
+     ( 0.999, 0.032, 0.001) (-0.032, 0.999, 0.015) (-0.000,-0.015, 1.000) 
 
 
   *** MASS SUMMARY BY ELEMENT TYPE ***
 
   TYPE      MASS
-     1   1.09163    
-     2  0.101711    
-     3  0.918679    
+     1  0.919172    
+     2   1.09286    
+     3  0.101711    
      4  0.101711    
-     5   1.09163    
-     6  0.918679    
-     7  0.275743    
-     8  0.181342    
-     9  0.662615    
-    10  0.662615    
-    11   4.83398    
-    12   7.43181    
-    13   1.32317    
-    14  0.190944    
-    15   1.06368    
-    16   1.06368    
-    17  0.181342    
-    18  0.715701    
-    19   4.82461    
-    20  0.531360    
-    21  0.715701    
-    22  0.196283    
-    23  0.105178    
-    24  0.222982    
-    25   1.95350    
-    26  0.287732    
-    27  0.335688    
-    28  0.335688    
-    29  0.287732    
-    30  0.275743    
+     5   1.09286    
+     6  0.919156    
+     7  0.331824    
+     8  0.331823    
+     9  0.851418    
+    10  0.200265    
+    11  0.851418    
+    12  0.171679    
+    13  0.171689    
+    14  0.366287    
+    15  0.222119    
+    16  0.743287    
+    17  0.725840    
+    18  0.725840    
+    19  0.743287    
+    20  0.284421    
+    21  0.331824    
+    22  0.284421    
+    23  0.331824    
+    24  0.274315    
+    25  0.274315    
+    26   1.86220    
+    27   4.39512    
+    28   2.02277    
+    29   11.6453    
+    30   1.18955    
 
  Range of element maximum matrix coefficients in global coordinates
- Maximum = 1.651388386E+10 at element 507.                               
- Minimum = 335046564 at element 526.                                     
+ Maximum = 8.425553694E+09 at element 130.                               
+ Minimum = 447663500 at element 504.                                     
 
    *** ELEMENT MATRIX FORMULATION TIMES
      TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-        1        25  BEAM188       0.000   0.000000
-        2         4  BEAM188       0.000   0.000000
-        3        21  BEAM188       0.000   0.000000
+        1        21  BEAM188       0.000   0.000000
+        2        26  BEAM188       0.000   0.000000
+        3         4  BEAM188       0.000   0.000000
         4         4  BEAM188       0.000   0.000000
-        5        25  BEAM188       0.000   0.000000
+        5        26  BEAM188       0.000   0.000000
         6        21  BEAM188       0.000   0.000000
-        7         4  BEAM188       0.000   0.000000
-        8         4  BEAM188       0.000   0.000000
-        9        16  BEAM188       0.000   0.000000
-       10        16  BEAM188       0.000   0.000000
-       11        64  BEAM188       0.000   0.000000
-       12       132  BEAM188       0.000   0.000000
-       13        33  BEAM188       0.000   0.000000
-       14         5  BEAM188       0.000   0.000000
-       15        14  BEAM188       0.000   0.000000
-       16        14  BEAM188       0.000   0.000000
-       17         4  BEAM188       0.000   0.000000
+        7         5  BEAM188       0.000   0.000000
+        8         5  BEAM188       0.000   0.000000
+        9        11  BEAM188       0.000   0.000000
+       10         6  BEAM188       0.000   0.000000
+       11        11  BEAM188       0.000   0.000000
+       12         6  BEAM188       0.000   0.000000
+       13         6  BEAM188       0.000   0.000000
+       14        11  BEAM188       0.000   0.000000
+       15         4  BEAM188       0.000   0.000000
+       16        10  BEAM188       0.000   0.000000
+       17         9  BEAM188       0.000   0.000000
        18         9  BEAM188       0.000   0.000000
-       19        48  BEAM188       0.000   0.000000
-       20         9  BEAM188       0.000   0.000000
-       21         9  BEAM188       0.000   0.000000
-       22        11  BEAM188       0.000   0.000000
-       23         6  BEAM188       0.000   0.000000
+       19        10  BEAM188       0.000   0.000000
+       20         4  BEAM188       0.000   0.000000
+       21         5  BEAM188       0.000   0.000000
+       22         4  BEAM188       0.000   0.000000
+       23         5  BEAM188       0.000   0.000000
        24         4  BEAM188       0.000   0.000000
-       25        26  BEAM188       0.000   0.000000
-       26         4  BEAM188       0.000   0.000000
-       27         5  BEAM188       0.000   0.000000
-       28         5  BEAM188       0.000   0.000000
-       29         4  BEAM188       0.000   0.000000
-       30         4  BEAM188       0.000   0.000000
+       25         4  BEAM188       0.000   0.000000
+       26        20  BEAM188       0.000   0.000000
+       27        46  BEAM188       0.000   0.000000
+       28        28  BEAM188       0.000   0.000000
+       29       210  BEAM188       0.000   0.000000
+       30        39  BEAM188       0.000   0.000000
        31         4  CONTA175      0.000   0.000000
        32         1  TARGE170      0.000   0.000000
        33         4  CONTA175      0.000   0.000000
        34         1  TARGE170      0.000   0.000000
        35         3  TARGE170      0.000   0.000000
        36         7  TARGE170      0.000   0.000000
- Time at end of element matrix formulation CP = 0.546875.                
+ Time at end of element matrix formulation CP = 0.53125.                 
 
  DISTRIBUTED SPARSE MATRIX DIRECT SOLVER.
-  Number of equations =        6125,    Maximum wavefront =     96
+  Number of equations =        6353,    Maximum wavefront =     96
 
 
   Memory allocated on only this MPI rank (rank     0)
   -------------------------------------------------------------------
-  Equation solver memory allocated                     =     1.920 MB
-  Equation solver memory required for in-core mode     =     1.858 MB
-  Equation solver memory required for out-of-core mode =     1.858 MB
-  Total (solver and non-solver) memory allocated       =   386.217 MB
+  Equation solver memory allocated                     =     2.024 MB
+  Equation solver memory required for in-core mode     =     1.959 MB
+  Equation solver memory required for out-of-core mode =     1.959 MB
+  Total (solver and non-solver) memory allocated       =   385.727 MB
 
 
   Total memory summed across all MPI ranks on this machines
   -------------------------------------------------------------------
-  Equation solver memory allocated                     =     7.081 MB
-  Equation solver memory required for in-core mode     =     6.847 MB
-  Equation solver memory required for out-of-core mode =     6.812 MB
-  Total (solver and non-solver) memory allocated       =   700.183 MB
+  Equation solver memory allocated                     =     7.364 MB
+  Equation solver memory required for in-core mode     =     7.121 MB
+  Equation solver memory required for out-of-core mode =     7.064 MB
+  Total (solver and non-solver) memory allocated       =   700.637 MB
 
- *** NOTE ***                            CP =       0.578   TIME= 17:11:39
+ *** NOTE ***                            CP =       0.547   TIME= 23:40:29
  The Distributed Sparse Matrix Solver is currently running in the        
  in-core memory mode.  This memory mode uses the most amount of memory   
  in order to avoid using the hard drive as much as possible, which most  
  often results in the fastest solution time.  This mode is recommended   
  if enough physical memory is present to accommodate all of the solver   
  data.                                                                   
- Distributed sparse solver maximum pivot= 3.230779033E+09 at node 453    
+ Distributed sparse solver maximum pivot= 1.737179866E+09 at node 129    
  UY.                                                                     
- Distributed sparse solver minimum pivot= 972.474381 at node 97 ROTX.    
- Distributed sparse solver minimum pivot in absolute value= 972.474381   
+ Distributed sparse solver minimum pivot= 972.881666 at node 97 ROTX.    
+ Distributed sparse solver minimum pivot in absolute value= 972.881666   
  at node 97 ROTX.                                                        
 
    *** ELEMENT RESULT CALCULATION TIMES
      TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-        1        25  BEAM188       0.000   0.000000
-        2         4  BEAM188       0.000   0.000000
-        3        21  BEAM188       0.000   0.000000
+        1        21  BEAM188       0.000   0.000000
+        2        26  BEAM188       0.000   0.000000
+        3         4  BEAM188       0.000   0.000000
         4         4  BEAM188       0.000   0.000000
-        5        25  BEAM188       0.000   0.000000
+        5        26  BEAM188       0.000   0.000000
         6        21  BEAM188       0.000   0.000000
-        7         4  BEAM188       0.000   0.000000
-        8         4  BEAM188       0.000   0.000000
-        9        16  BEAM188       0.000   0.000000
-       10        16  BEAM188       0.000   0.000000
-       11        64  BEAM188       0.000   0.000000
-       12       132  BEAM188       0.000   0.000000
-       13        33  BEAM188       0.000   0.000000
-       14         5  BEAM188       0.000   0.000000
-       15        14  BEAM188       0.000   0.000000
-       16        14  BEAM188       0.000   0.000000
-       17         4  BEAM188       0.000   0.000000
+        7         5  BEAM188       0.000   0.000000
+        8         5  BEAM188       0.000   0.000000
+        9        11  BEAM188       0.000   0.000000
+       10         6  BEAM188       0.000   0.000000
+       11        11  BEAM188       0.000   0.000000
+       12         6  BEAM188       0.000   0.000000
+       13         6  BEAM188       0.000   0.000000
+       14        11  BEAM188       0.000   0.000000
+       15         4  BEAM188       0.000   0.000000
+       16        10  BEAM188       0.000   0.000000
+       17         9  BEAM188       0.000   0.000000
        18         9  BEAM188       0.000   0.000000
-       19        48  BEAM188       0.000   0.000000
-       20         9  BEAM188       0.000   0.000000
-       21         9  BEAM188       0.000   0.000000
-       22        11  BEAM188       0.000   0.000000
-       23         6  BEAM188       0.000   0.000000
+       19        10  BEAM188       0.000   0.000000
+       20         4  BEAM188       0.000   0.000000
+       21         5  BEAM188       0.000   0.000000
+       22         4  BEAM188       0.000   0.000000
+       23         5  BEAM188       0.000   0.000000
        24         4  BEAM188       0.000   0.000000
-       25        26  BEAM188       0.000   0.000000
-       26         4  BEAM188       0.000   0.000000
-       27         5  BEAM188       0.000   0.000000
-       28         5  BEAM188       0.000   0.000000
-       29         4  BEAM188       0.000   0.000000
-       30         4  BEAM188       0.000   0.000000
+       25         4  BEAM188       0.000   0.000000
+       26        20  BEAM188       0.000   0.000000
+       27        46  BEAM188       0.000   0.000000
+       28        28  BEAM188       0.000   0.000000
+       29       210  BEAM188       0.000   0.000000
+       30        39  BEAM188       0.000   0.000000
        31         4  CONTA175      0.000   0.000000
        33         4  CONTA175      0.000   0.000000
 
    *** NODAL LOAD CALCULATION TIMES
      TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-        1        25  BEAM188       0.000   0.000000
-        2         4  BEAM188       0.000   0.000000
-        3        21  BEAM188       0.000   0.000000
+        1        21  BEAM188       0.000   0.000000
+        2        26  BEAM188       0.000   0.000000
+        3         4  BEAM188       0.000   0.000000
         4         4  BEAM188       0.000   0.000000
-        5        25  BEAM188       0.000   0.000000
+        5        26  BEAM188       0.000   0.000000
         6        21  BEAM188       0.000   0.000000
-        7         4  BEAM188       0.000   0.000000
-        8         4  BEAM188       0.000   0.000000
-        9        16  BEAM188       0.000   0.000000
-       10        16  BEAM188       0.000   0.000000
-       11        64  BEAM188       0.000   0.000000
-       12       132  BEAM188       0.000   0.000000
-       13        33  BEAM188       0.000   0.000000
-       14         5  BEAM188       0.000   0.000000
-       15        14  BEAM188       0.000   0.000000
-       16        14  BEAM188       0.000   0.000000
-       17         4  BEAM188       0.000   0.000000
+        7         5  BEAM188       0.000   0.000000
+        8         5  BEAM188       0.000   0.000000
+        9        11  BEAM188       0.000   0.000000
+       10         6  BEAM188       0.000   0.000000
+       11        11  BEAM188       0.000   0.000000
+       12         6  BEAM188       0.000   0.000000
+       13         6  BEAM188       0.000   0.000000
+       14        11  BEAM188       0.000   0.000000
+       15         4  BEAM188       0.000   0.000000
+       16        10  BEAM188       0.000   0.000000
+       17         9  BEAM188       0.000   0.000000
        18         9  BEAM188       0.000   0.000000
-       19        48  BEAM188       0.000   0.000000
-       20         9  BEAM188       0.000   0.000000
-       21         9  BEAM188       0.000   0.000000
-       22        11  BEAM188       0.000   0.000000
-       23         6  BEAM188       0.000   0.000000
+       19        10  BEAM188       0.000   0.000000
+       20         4  BEAM188       0.000   0.000000
+       21         5  BEAM188       0.000   0.000000
+       22         4  BEAM188       0.000   0.000000
+       23         5  BEAM188       0.000   0.000000
        24         4  BEAM188       0.000   0.000000
-       25        26  BEAM188       0.000   0.000000
-       26         4  BEAM188       0.000   0.000000
-       27         5  BEAM188       0.000   0.000000
-       28         5  BEAM188       0.000   0.000000
-       29         4  BEAM188       0.000   0.000000
-       30         4  BEAM188       0.000   0.000000
+       25         4  BEAM188       0.000   0.000000
+       26        20  BEAM188       0.000   0.000000
+       27        46  BEAM188       0.000   0.000000
+       28        28  BEAM188       0.000   0.000000
+       29       210  BEAM188       0.000   0.000000
+       30        39  BEAM188       0.000   0.000000
        31         4  CONTA175      0.000   0.000000
        33         4  CONTA175      0.000   0.000000
  *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
@@ -1153,7 +1153,7 @@
 
  *** MAPDL BINARY FILE STATISTICS
   BUFFER SIZE USED= 16384
-        0.312 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
+        0.375 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
         0.750 MB WRITTEN ON RESULTS FILE: file0.rst
  *************** Write FE CONNECTORS *********
 
@@ -1161,28 +1161,28 @@
  ****************************************************
  *************** FINISHED SOLVE FOR LS 1 *************
 
- *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  17.1941667    
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  23.6747222    
 
  PRINTOUT RESUMED BY /GOP
 
  FINISH SOLUTION PROCESSING
 
 
- ***** ROUTINE COMPLETED *****  CP =         0.688
+ ***** ROUTINE COMPLETED *****  CP =         0.625
 
 
 
  *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R2          24.2     ***
  Ansys Mechanical Enterprise Academic Teaching     
- 01059839  VERSION=WINDOWS x64   17:11:40  MAR 05, 2025 CP=      0.703
+ 01059839  VERSION=WINDOWS x64   23:40:29  MAR 15, 2025 CP=      0.625
 
- Torsional_Analysis_v2--Static Structural (A5)                                 
+ Torsional_Analysis_Old_Frame--Static Structural (A5)                          
 
 
 
           ***** MAPDL RESULTS INTERPRETATION (POST1) *****
 
- *** NOTE ***                            CP =       0.703   TIME= 17:11:40
+ *** NOTE ***                            CP =       0.625   TIME= 23:40:29
  Reading results into the database (SET command) will update the current 
  displacement and force boundary conditions in the database with the     
  values from the results file for that load set.  Note that any          
@@ -1200,29 +1200,29 @@
  EXIT THE MAPDL POST1 DATABASE PROCESSOR
 
 
- ***** ROUTINE COMPLETED *****  CP =         0.703
+ ***** ROUTINE COMPLETED *****  CP =         0.641
 
 
 
  PRINTOUT RESUMED BY /GOP
 
- *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  17.1944444    
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  23.6747222    
 
  PARAMETER _PREPTIME =     0.000000000    
 
  PARAMETER _SOLVTIME =     0.000000000    
 
- PARAMETER _POSTTIME =     1.000000000    
+ PARAMETER _POSTTIME =     0.000000000    
 
- PARAMETER _TOTALTIM =     1.000000000    
+ PARAMETER _TOTALTIM =     0.000000000    
 
- *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  1.02158273    
+ *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  1.02758621    
 
- *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE= 0.278696000E-01
+ *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE= 0.321303000E-01
 
  *GET  _SSMODE   FROM  ACTI  ITEM=SOLU SSMM  VALUE=  2.00000000    
 
- *GET  _NDOFS    FROM  ACTI  ITEM=SOLU NDOF  VALUE=  6125.00000    
+ *GET  _NDOFS    FROM  ACTI  ITEM=SOLU NDOF  VALUE=  6353.00000    
 
  *GET  _SOL_END_TIME  FROM  ACTI  ITEM=SET  TIME  VALUE=  1.00000000    
 
@@ -1232,12 +1232,12 @@
  /FCLEAN COMMAND REMOVING ALL LOCAL FILES
 
  *ENDIF
- --- Total number of nodes = 1038
- --- Total number of elements = 570
- --- Element load balance ratio = 1.02158273
- --- Time to combine distributed files = 2.78696E-02
+ --- Total number of nodes = 1076
+ --- Total number of elements = 594
+ --- Element load balance ratio = 1.02758621
+ --- Time to combine distributed files = 3.21303E-02
  --- Sparse memory mode = 2
- --- Number of DOF = 6125
+ --- Number of DOF = 6353
 
  EXIT MAPDL WITHOUT SAVING DATABASE
 
@@ -1248,7 +1248,7 @@
 +--------------------- M A P D L   S T A T I S T I C S ------------------------+
 
 Release: 2024 R2            Build: 24.2       Update: UP20240603   Platform: WINDOWS x64 
-Date Run: 03/05/2025   Time: 17:11     Process ID: 24036
+Date Run: 03/15/2025   Time: 23:40     Process ID: 24192
 Operating System: Windows 11  (Build: 26100)
 
 Processor Model: 13th Gen Intel(R) Core(TM) i9-13900H
@@ -1274,35 +1274,35 @@ Input File: dummy.dat
 
   Core                Machine Name   Working Directory
  -----------------------------------------------------
-     0                  evanlaptop   C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\_ProjectScratch\ScrD265
-     1                  evanlaptop   C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\_ProjectScratch\ScrD265
-     2                  evanlaptop   C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\_ProjectScratch\ScrD265
-     3                  evanlaptop   C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\_ProjectScratch\ScrD265
+     0                  evanlaptop   C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\_ProjectScratch\Scr71ED
+     1                  evanlaptop   C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\_ProjectScratch\Scr71ED
+     2                  evanlaptop   C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\_ProjectScratch\Scr71ED
+     3                  evanlaptop   C:\Users\butte\OneDrive\Documents\GitHub\vandymotorsports\Chassis\Torsional Analysis\_ProjectScratch\Scr71ED
  
-Latency time from master to core     1 =    2.595 microseconds
-Latency time from master to core     2 =    2.622 microseconds
-Latency time from master to core     3 =    2.556 microseconds
+Latency time from master to core     1 =    2.784 microseconds
+Latency time from master to core     2 =    2.221 microseconds
+Latency time from master to core     3 =    2.123 microseconds
  
-Communication speed from master to core     1 =  7373.27 MB/sec
-Communication speed from master to core     2 =  7604.20 MB/sec
-Communication speed from master to core     3 =  7802.29 MB/sec
+Communication speed from master to core     1 =  8531.24 MB/sec
+Communication speed from master to core     2 =  9077.09 MB/sec
+Communication speed from master to core     3 =  9559.89 MB/sec
 
 Total CPU time for main thread                    :        1.0 seconds
-Total CPU time summed for all threads             :        0.8 seconds
+Total CPU time summed for all threads             :        0.7 seconds
 
 Elapsed time spent obtaining a license            :        0.5 seconds
 Elapsed time spent pre-processing model (/PREP7)  :        0.1 seconds
 Elapsed time spent solution - preprocessing       :        0.1 seconds
-Elapsed time spent computing solution             :        0.1 seconds
+Elapsed time spent computing solution             :        0.2 seconds
 Elapsed time spent solution - postprocessing      :        0.0 seconds
 Elapsed time spent post-processing model (/POST1) :        0.0 seconds
  
 Equation solver used                              :            Sparse (symmetric)
-Equation solver computational rate                :        0.3 Gflops
+Equation solver effective I/O rate                :        0.4 GB/sec
 
-Sum of disk space used on all processes           :        5.1 MB
+Sum of disk space used on all processes           :        5.3 MB
 
-Sum of memory used on all processes               :      539.0 MB
+Sum of memory used on all processes               :      540.0 MB
 Sum of memory allocated on all processes          :     2880.0 MB
 Physical memory available                         :         32 GB
 Total amount of I/O written to disk               :        0.0 GB
@@ -1322,13 +1322,13 @@ Total amount of I/O read from disk                :        0.0 GB
  |-----------------------------------------------------------------------------|
  |                                                                             |
  |  Database Requested(-db)     1024 MB     Scratch Memory Requested   1024 MB |
- |  Max Database Used(Master)      2 MB     Max Scratch Used(Master)    135 MB |
+ |  Max Database Used(Master)      2 MB     Max Scratch Used(Master)    136 MB |
  |  Max Database Used(Workers)     1 MB     Max Scratch Used(Workers)   133 MB |
- |  Sum Database Used(All)         5 MB     Sum Scratch Used(All)       534 MB |
+ |  Sum Database Used(All)         5 MB     Sum Scratch Used(All)       535 MB |
  |                                                                             |
  |-----------------------------------------------------------------------------|
  |                                                                             |
- |        CP Time      (sec) =          0.828       Time  =  17:11:41          |
- |        Elapsed Time (sec) =          4.000       Date  =  03/05/2025        |
+ |        CP Time      (sec) =          0.734       Time  =  23:40:31          |
+ |        Elapsed Time (sec) =          4.000       Date  =  03/15/2025        |
  |                                                                             |
  *-----------------------------------------------------------------------------*
